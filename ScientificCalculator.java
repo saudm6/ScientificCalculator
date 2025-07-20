@@ -15,7 +15,7 @@ public class ScientificCalculator {
     public static boolean displayMenu(boolean b) {
         Scanner inputReader = new Scanner(System.in);
         System.out.print("""
-                Function = (type this to perform the action)\
+                ====== Scientific Calculator ======\
                 
                 1 = Addition\
                 
@@ -226,17 +226,27 @@ public class ScientificCalculator {
     }
 
     public static void squareRoot(){
+        double num = 0;
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        double num = inputReader.nextDouble();
-        System.out.print(Math.sqrt(num) + "\n\n");
+        while (true){
+            System.out.print("Enter number: ");
+            if (inputReader.hasNextDouble()){
+                num = inputReader.nextDouble();
+                System.out.print(Math.sqrt(num) + "\n\n");
+                break;
+            }
+            else {
+                System.out.print("ENTER A VALID NUMBER " + "\n");
+                inputReader.next();
+
+            }
+        }
     }
 
     public static void power(){
         Scanner inputReader = new Scanner(System.in);
         double num1 = 0;
         double num2 = 0;
-
 
         while (true){
             System.out.print("Enter base: ");
@@ -266,66 +276,165 @@ public class ScientificCalculator {
     }
 
     public static void sine(){
+        double num = 0;
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        double num = inputReader.nextDouble();
-        System.out.println(Math.sin(num) + "\n\n");
+        while (true){
+            System.out.print("Enter number: ");
+            if (inputReader.hasNextDouble()){
+                num = inputReader.nextDouble();
+                System.out.print(Math.sin(num) + "\n\n");
+                break;
+            }
+            else {
+                System.out.print("ENTER A VALID NUMBER " + "\n");
+                inputReader.next();
+
+            }
+        }
     }
 
     public static void cosine(){
+        double num = 0;
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        double num = inputReader.nextDouble();
-        System.out.println(Math.cos(num) + "\n\n");
+        while (true){
+            System.out.print("Enter number: ");
+            if (inputReader.hasNextDouble()){
+                num = inputReader.nextDouble();
+                System.out.print(Math.cos(num) + "\n\n");
+                break;
+            }
+            else {
+                System.out.print("ENTER A VALID NUMBER " + "\n");
+                inputReader.next();
+
+            }
+        }
     }
 
     public static void tangent(){
+        double num = 0;
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        double num = inputReader.nextDouble();
-        System.out.println(Math.tan(num) + "\n\n");
+        while (true){
+            System.out.print("Enter number: ");
+            if (inputReader.hasNextDouble()){
+                num = inputReader.nextDouble();
+                System.out.print(Math.tan(num) + "\n\n");
+                break;
+            }
+            else {
+                System.out.print("ENTER A VALID NUMBER " + "\n");
+                inputReader.next();
+
+            }
+        }
     }
 
     public static void naturalLog(){
+        double num = 0;
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        double num = inputReader.nextDouble();
-        System.out.println(Math.log(num) + "\n\n");
+        while (true){
+            System.out.print("Enter number: ");
+            if (inputReader.hasNextDouble()){
+                num = inputReader.nextDouble();
+                System.out.print(Math.log(num) + "\n\n");
+                break;
+            }
+            else {
+                System.out.print("ENTER A VALID NUMBER " + "\n");
+                inputReader.next();
+
+            }
+        }
     }
 
     public static void base10(){
+        double num = 0;
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        double num = inputReader.nextDouble();
-        System.out.println(Math.log10(num) + "\n\n");
+        while (true){
+            System.out.print("Enter number: ");
+            if (inputReader.hasNextDouble()){
+                num = inputReader.nextDouble();
+                System.out.print(Math.log10(num) + "\n\n");
+                break;
+            }
+            else {
+                System.out.print("ENTER A VALID NUMBER " + "\n");
+                inputReader.next();
+
+            }
+        }
     }
 
     public static void absolute(){
+        double num = 0;
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        double num = inputReader.nextDouble();
-        System.out.println(Math.abs(num) + "\n\n");
+        while (true){
+            System.out.print("Enter number: ");
+            if (inputReader.hasNextDouble()){
+                num = inputReader.nextDouble();
+                System.out.print(Math.abs(num) + "\n\n");
+                break;
+            }
+            else {
+                System.out.print("ENTER A VALID NUMBER " + "\n");
+                inputReader.next();
+
+            }
+        }
     }
 
     public static void round(){
+        double num = 0;
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        double num = inputReader.nextDouble();
-        System.out.println(Math.round(num) + "\n\n");
+        while (true){
+            System.out.print("Enter number: ");
+            if (inputReader.hasNextDouble()){
+                num = inputReader.nextDouble();
+                System.out.print(Math.round(num) + "\n\n");
+                break;
+            }
+            else {
+                System.out.print("ENTER A VALID NUMBER " + "\n");
+                inputReader.next();
+
+            }
+        }
     }
 
     public static void ceil(){
+        double num = 0;
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        double num = inputReader.nextDouble();
-        System.out.println(Math.ceil(num) + "\n\n");
+        while (true){
+            System.out.print("Enter number: ");
+            if (inputReader.hasNextDouble()){
+                num = inputReader.nextDouble();
+                System.out.print(Math.ceil(num) + "\n\n");
+                break;
+            }
+            else {
+                System.out.print("ENTER A VALID NUMBER " + "\n");
+                inputReader.next();
+
+            }
+        }
     }
 
     public static void floor(){
+        double num = 0;
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        double num = inputReader.nextDouble();
-        System.out.println(Math.floor(num) + "\n\n");
+        while (true){
+            System.out.print("Enter number: ");
+            if (inputReader.hasNextDouble()){
+                num = inputReader.nextDouble();
+                System.out.print(Math.floor(num) + "\n\n");
+                break;
+            }
+            else {
+                System.out.print("ENTER A VALID NUMBER " + "\n");
+                inputReader.next();
+
+            }
+        }
     }
 
     public static void min(){
