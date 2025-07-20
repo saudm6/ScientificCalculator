@@ -75,6 +75,8 @@ public class ScientificCalculator {
             sine();
         } else if (Objects.equals(userInput, "8")) {
             cosine();
+        } else if (Objects.equals(userInput, "9")) {
+            tangent();
         } else {
             System.out.println("\nEnter a valid response\n");
         }
@@ -143,6 +145,13 @@ public class ScientificCalculator {
         System.out.print("Enter number: ");
         double num = inputReader.nextDouble();
         System.out.println(Math.cos(num) + "\n\n");
+    }
+
+    public static void tangent(){
+        Scanner inputReader = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        double num = inputReader.nextDouble();
+        System.out.println(Math.tan(num) + "\n\n");
     }
 
 }
