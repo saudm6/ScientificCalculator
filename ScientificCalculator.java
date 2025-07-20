@@ -73,7 +73,9 @@ public class ScientificCalculator {
             power();
         } else if (Objects.equals(userInput, "7")) {
             sine();
-        }else {
+        } else if (Objects.equals(userInput, "8")) {
+            cosine();
+        } else {
             System.out.println("\nEnter a valid response\n");
         }
     }
@@ -122,18 +124,25 @@ public class ScientificCalculator {
 
     public static void power(){
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number 1: ");
+        System.out.print("Enter base: ");
         double num1 = inputReader.nextDouble();
-        System.out.print("Enter number 2: ");
+        System.out.print("Enter exponent: ");
         double num2 = inputReader.nextDouble();
         System.out.println(Math.pow(num1, num2) + "\n\n");
     }
 
     public static void sine(){
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number 1: ");
+        System.out.print("Enter number: ");
         double num = inputReader.nextDouble();
         System.out.println(Math.sin(num) + "\n\n");
+    }
+
+    public static void cosine(){
+        Scanner inputReader = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        double num = inputReader.nextDouble();
+        System.out.println(Math.cos(num) + "\n\n");
     }
 
 }
