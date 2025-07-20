@@ -61,6 +61,8 @@ public class ScientificCalculator {
             add();
         } else if (Objects.equals(userInput, "2")) {
             minus();
+        }else if (Objects.equals(userInput, "3")) {
+            multiply();
         } else {
             System.out.println("\nEnter a valid response\n");
         }
@@ -81,6 +83,15 @@ public class ScientificCalculator {
         System.out.print("Enter number 2: ");
         double num2 = inputReader.nextDouble();
         System.out.println(num1 - num2 + "\n\n");
+    }
+
+    public static void multiply(){
+        Scanner inputReader = new Scanner(System.in);
+        System.out.print("Enter number 1: ");
+        double num1 = inputReader.nextDouble();
+        System.out.print("Enter number 2: ");
+        double num2 = inputReader.nextDouble();
+        System.out.println(num1 * num2 + "\n\n");
     }
 
 }
