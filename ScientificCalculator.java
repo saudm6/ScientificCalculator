@@ -30,7 +30,7 @@ public class ScientificCalculator {
                 
                 6 = Power\
                 
-                7 = Sin\
+                7 = Sine\
                 
                 8 = Cosine\
                 
@@ -71,7 +71,9 @@ public class ScientificCalculator {
             squareRoot();
         } else if (Objects.equals(userInput, "6")) {
             power();
-        } else {
+        } else if (Objects.equals(userInput, "7")) {
+            sine();
+        }else {
             System.out.println("\nEnter a valid response\n");
         }
     }
@@ -125,6 +127,13 @@ public class ScientificCalculator {
         System.out.print("Enter number 2: ");
         double num2 = inputReader.nextDouble();
         System.out.println(Math.pow(num1, num2) + "\n\n");
+    }
+
+    public static void sine(){
+        Scanner inputReader = new Scanner(System.in);
+        System.out.print("Enter number 1: ");
+        double num = inputReader.nextDouble();
+        System.out.println(Math.sin(num) + "\n\n");
     }
 
 }
