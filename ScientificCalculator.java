@@ -69,6 +69,8 @@ public class ScientificCalculator {
             division();
         } else if (Objects.equals(userInput, "5")) {
             squareRoot();
+        } else if (Objects.equals(userInput, "6")) {
+            power();
         } else {
             System.out.println("\nEnter a valid response\n");
         }
@@ -114,6 +116,15 @@ public class ScientificCalculator {
         System.out.print("Enter number: ");
         double num = inputReader.nextDouble();
         System.out.print(Math.sqrt(num) + "\n\n");
+    }
+
+    public static void power(){
+        Scanner inputReader = new Scanner(System.in);
+        System.out.print("Enter number 1: ");
+        double num1 = inputReader.nextDouble();
+        System.out.print("Enter number 2: ");
+        double num2 = inputReader.nextDouble();
+        System.out.println(Math.pow(num1, num2) + "\n\n");
     }
 
 }
