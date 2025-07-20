@@ -234,10 +234,33 @@ public class ScientificCalculator {
 
     public static void power(){
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter base: ");
-        double num1 = inputReader.nextDouble();
-        System.out.print("Enter exponent: ");
-        double num2 = inputReader.nextDouble();
+        double num1 = 0;
+        double num2 = 0;
+
+        while (true){
+            System.out.print("Enter base: ");
+            if (inputReader.hasNextDouble()){
+                num1 = inputReader.nextDouble();
+                break;
+            }
+            else {
+                System.out.println("ENTER A VALID NUMBER");
+                inputReader.next();
+            }
+        }
+
+        while (true){
+            System.out.print("Enter exponent: ");
+            if (inputReader.hasNextDouble()){
+                num2 = inputReader.nextDouble();
+                break;
+            }
+            else {
+                System.out.println("ENTER A VALID NUMBER");
+                inputReader.next();
+            }
+        }
+
         System.out.println(Math.pow(num1, num2) + "\n\n");
     }
 
@@ -306,19 +329,65 @@ public class ScientificCalculator {
 
     public static void min(){
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number 1: ");
-        double num1 = inputReader.nextDouble();
-        System.out.print("Enter number 2: ");
-        double num2 = inputReader.nextDouble();
+        double num1 = 0;
+        double num2 = 0;
+
+        while (true){
+            System.out.print("Enter number 1: ");
+            if (inputReader.hasNextDouble()){
+                num1 = inputReader.nextDouble();
+                break;
+            }
+            else {
+                System.out.println("ENTER A VALID NUMBER");
+                inputReader.next();
+            }
+        }
+
+        while (true){
+            System.out.print("Enter number 2: ");
+            if (inputReader.hasNextDouble()){
+                num2 = inputReader.nextDouble();
+                break;
+            }
+            else {
+                System.out.println("ENTER A VALID NUMBER");
+                inputReader.next();
+            }
+        }
+
         System.out.println(Math.min(num1, num2) + "\n\n");
     }
 
     public static void max(){
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number 1: ");
-        double num1 = inputReader.nextDouble();
-        System.out.print("Enter number 2: ");
-        double num2 = inputReader.nextDouble();
+        double num1 = 0;
+        double num2 = 0;
+
+        while (true){
+            System.out.print("Enter number 1: ");
+            if (inputReader.hasNextDouble()){
+                num1 = inputReader.nextDouble();
+                break;
+            }
+            else {
+                System.out.println("ENTER A VALID NUMBER");
+                inputReader.next();
+            }
+        }
+
+        while (true){
+            System.out.print("Enter number 2: ");
+            if (inputReader.hasNextDouble()){
+                num2 = inputReader.nextDouble();
+                break;
+            }
+            else {
+                System.out.println("ENTER A VALID NUMBER");
+                inputReader.next();
+            }
+        }
+
         System.out.println(Math.max(num1, num2) + "\n\n");
     }
 
