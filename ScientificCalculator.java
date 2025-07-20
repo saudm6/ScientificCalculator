@@ -12,7 +12,6 @@ public class ScientificCalculator {
             }
         }
 
-
     public static boolean displayMenu(boolean b) {
         Scanner inputReader = new Scanner(System.in);
         System.out.print("""
@@ -100,37 +99,129 @@ public class ScientificCalculator {
     }
     public static void add(){
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number 1: ");
-        double num1 = inputReader.nextDouble();
-        System.out.print("Enter number 2: ");
-        double num2 = inputReader.nextDouble();
+        double num1 = 0;
+        double num2 = 0;
+
+        while (true){
+            System.out.print("Enter number 1: ");
+            if (inputReader.hasNextDouble()){
+                num1 = inputReader.nextDouble();
+                break;
+            }
+            else {
+                System.out.println("ENTER A VALID NUMBER");
+                inputReader.next();
+            }
+        }
+
+        while (true){
+            System.out.print("Enter number 2: ");
+            if (inputReader.hasNextDouble()){
+                num2 = inputReader.nextDouble();
+                break;
+            }
+            else {
+                System.out.println("ENTER A VALID NUMBER");
+                inputReader.next();
+            }
+        }
+
         System.out.println(num1 + num2 + "\n\n");
     }
 
     public static void minus(){
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number 1: ");
-        double num1 = inputReader.nextDouble();
-        System.out.print("Enter number 2: ");
-        double num2 = inputReader.nextDouble();
+        double num1 = 0;
+        double num2 = 0;
+
+        while (true){
+            System.out.print("Enter number 1: ");
+            if (inputReader.hasNextDouble()){
+                num1 = inputReader.nextDouble();
+                break;
+            }
+            else {
+                System.out.println("ENTER A VALID NUMBER");
+                inputReader.next();
+            }
+        }
+
+        while (true){
+            System.out.print("Enter number 2: ");
+            if (inputReader.hasNextDouble()){
+                num2 = inputReader.nextDouble();
+                break;
+            }
+            else {
+                System.out.println("ENTER A VALID NUMBER");
+                inputReader.next();
+            }
+        }
+
         System.out.println(num1 - num2 + "\n\n");
     }
 
     public static void multiply(){
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number 1: ");
-        double num1 = inputReader.nextDouble();
-        System.out.print("Enter number 2: ");
-        double num2 = inputReader.nextDouble();
+        double num1 = 0;
+        double num2 = 0;
+
+        while (true){
+            System.out.print("Enter number 1: ");
+            if (inputReader.hasNextDouble()){
+                num1 = inputReader.nextDouble();
+                break;
+            }
+            else {
+                System.out.println("ENTER A VALID NUMBER");
+                inputReader.next();
+            }
+        }
+
+        while (true){
+            System.out.print("Enter number 2: ");
+            if (inputReader.hasNextDouble()){
+                num2 = inputReader.nextDouble();
+                break;
+            }
+            else {
+                System.out.println("ENTER A VALID NUMBER");
+                inputReader.next();
+            }
+        }
+
         System.out.println(num1 * num2 + "\n\n");
     }
 
     public static void division(){
         Scanner inputReader = new Scanner(System.in);
-        System.out.print("Enter number 1: ");
-        double num1 = inputReader.nextDouble();
-        System.out.print("Enter number 2: ");
-        double num2 = inputReader.nextDouble();
+        double num1 = 0;
+        double num2 = 0;
+
+        while (true){
+            System.out.print("Enter number 1: ");
+            if (inputReader.hasNextDouble()){
+                num1 = inputReader.nextDouble();
+                break;
+            }
+            else {
+                System.out.println("ENTER A VALID NUMBER");
+                inputReader.next();
+            }
+        }
+
+        while (true){
+            System.out.print("Enter number 2: ");
+            if (inputReader.hasNextDouble()){
+                num2 = inputReader.nextDouble();
+                break;
+            }
+            else {
+                System.out.println("ENTER A VALID NUMBER");
+                inputReader.next();
+            }
+        }
+
         System.out.println(num1 / num2 + "\n\n");
     }
 
