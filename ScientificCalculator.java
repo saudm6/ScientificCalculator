@@ -63,6 +63,8 @@ public class ScientificCalculator {
             minus();
         }else if (Objects.equals(userInput, "3")) {
             multiply();
+        } else if (Objects.equals(userInput, "4")) {
+            division();
         } else {
             System.out.println("\nEnter a valid response\n");
         }
@@ -92,6 +94,15 @@ public class ScientificCalculator {
         System.out.print("Enter number 2: ");
         double num2 = inputReader.nextDouble();
         System.out.println(num1 * num2 + "\n\n");
+    }
+
+    public static void division(){
+        Scanner inputReader = new Scanner(System.in);
+        System.out.print("Enter number 1: ");
+        double num1 = inputReader.nextDouble();
+        System.out.print("Enter number 2: ");
+        double num2 = inputReader.nextDouble();
+        System.out.println(num1 / num2 + "\n\n");
     }
 
 }
