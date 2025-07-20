@@ -79,6 +79,8 @@ public class ScientificCalculator {
             tangent();
         } else if (Objects.equals(userInput, "10")) {
             naturalLog();
+        } else if (Objects.equals(userInput, "11")) {
+            base10();
         } else {
             System.out.println("\nEnter a valid response\n");
         }
@@ -161,6 +163,13 @@ public class ScientificCalculator {
         System.out.print("Enter number: ");
         double num = inputReader.nextDouble();
         System.out.println(Math.log(num) + "\n\n");
+    }
+
+    public static void base10(){
+        Scanner inputReader = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        double num = inputReader.nextDouble();
+        System.out.println(Math.log10(num) + "\n\n");
     }
 
 }
