@@ -7,13 +7,13 @@ public class ScientificCalculator {
     public static void main(String[] args){
         Scanner inputReader = new Scanner(System.in);
 
-        while(true){
-            displayMenu();
+        while(displayMenu(true)){
+            displayMenu(true);
             }
         }
 
 
-    public static void displayMenu() {
+    public static boolean displayMenu(boolean b) {
         Scanner inputReader = new Scanner(System.in);
         System.out.print("""
                 Function = (type this to perform the action)\
@@ -52,10 +52,8 @@ public class ScientificCalculator {
                 
                 17 = Maximum\
                 
-                18 = Helper Operations\
-                
-                19 = Exit\
-                
+                18 = Exit\
+
                 Enter the operation you want to run:\s""");
 
         String userInput = inputReader.nextLine();
@@ -89,9 +87,16 @@ public class ScientificCalculator {
             ceil();
         } else if (Objects.equals(userInput, "15")) {
             floor();
+        } else if (Objects.equals(userInput, "16")) {
+            min();
+        } else if (Objects.equals(userInput, "17")) {
+            max();
+        } else if (Objects.equals(userInput, "18")) {
+            return false;
         } else {
             System.out.println("\nEnter a valid response\n");
         }
+        return displayMenu(true);
     }
     public static void add(){
         Scanner inputReader = new Scanner(System.in);
@@ -206,6 +211,24 @@ public class ScientificCalculator {
         System.out.print("Enter number: ");
         double num = inputReader.nextDouble();
         System.out.println(Math.floor(num) + "\n\n");
+    }
+
+    public static void min(){
+        Scanner inputReader = new Scanner(System.in);
+        System.out.print("Enter number 1: ");
+        double num1 = inputReader.nextDouble();
+        System.out.print("Enter number 2: ");
+        double num2 = inputReader.nextDouble();
+        System.out.println(Math.min(num1, num2) + "\n\n");
+    }
+
+    public static void max(){
+        Scanner inputReader = new Scanner(System.in);
+        System.out.print("Enter number 1: ");
+        double num1 = inputReader.nextDouble();
+        System.out.print("Enter number 2: ");
+        double num2 = inputReader.nextDouble();
+        System.out.println(Math.max(num1, num2) + "\n\n");
     }
 
 }
