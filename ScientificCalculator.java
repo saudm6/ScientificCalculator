@@ -83,6 +83,12 @@ public class ScientificCalculator {
             base10();
         } else if (Objects.equals(userInput, "12")) {
             absolute();
+        } else if (Objects.equals(userInput, "13")) {
+            round();
+        } else if (Objects.equals(userInput, "14")) {
+            ceil();
+        } else if (Objects.equals(userInput, "15")) {
+            floor();
         } else {
             System.out.println("\nEnter a valid response\n");
         }
@@ -179,6 +185,27 @@ public class ScientificCalculator {
         System.out.print("Enter number: ");
         double num = inputReader.nextDouble();
         System.out.println(Math.abs(num) + "\n\n");
+    }
+
+    public static void round(){
+        Scanner inputReader = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        double num = inputReader.nextDouble();
+        System.out.println(Math.round(num) + "\n\n");
+    }
+
+    public static void ceil(){
+        Scanner inputReader = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        double num = inputReader.nextDouble();
+        System.out.println(Math.ceil(num) + "\n\n");
+    }
+
+    public static void floor(){
+        Scanner inputReader = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        double num = inputReader.nextDouble();
+        System.out.println(Math.floor(num) + "\n\n");
     }
 
 }
