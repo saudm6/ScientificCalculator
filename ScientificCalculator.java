@@ -237,6 +237,7 @@ public class ScientificCalculator {
         double num1 = 0;
         double num2 = 0;
 
+
         while (true){
             System.out.print("Enter base: ");
             if (inputReader.hasNextDouble()){
